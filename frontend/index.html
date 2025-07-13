@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রাজনৈতিক সহিংসতা ম্যাপ - বাংলাদেশ</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>রাজনৈতিক সহিংসতা ম্যাপ</h1>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="controls-wrapper">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" placeholder="ঘটনা বা দলের নাম দিয়ে খুঁজুন...">
+                </div>
+                <div class="filter-box">
+                    <i class="fa-solid fa-filter"></i>
+                    <select id="date-filter">
+                        <option value="all">সকল সময়</option>
+                        <option value="7">শেষ ৭ দিন</option>
+                        <option value="30">শেষ ৩০ দিন</option>
+                    </select>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <footer class="main-footer-section">
+        <div class="container">
+            <p>&copy; 2025 রাজনৈতিক সহিংসতা ম্যাপ। সকল তথ্য বিভিন্ন নিউজ পোর্টাল থেকে স্বয়ংক্রিয়ভাবে সংগৃহীত।</p>
+            <p class="disclaimer">এই প্ল্যাটফর্মটি শুধুমাত্র শিক্ষামূলক এবং গবেষণার উদ্দেশ্যে তৈরি।</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
